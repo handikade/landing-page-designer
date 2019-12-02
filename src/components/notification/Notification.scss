@@ -1,0 +1,55 @@
+@import '../../styles/_colors.scss';
+
+.notification {
+  padding: 15px 10px;
+  background-color: $smoke-grey;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 720px) {
+      flex-direction: initial;
+      align-items: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  }
+
+  &__content {
+    color: black;
+    font-size: 12px;
+
+    @media (min-width: 720px) {
+      flex-grow: 1;
+    }
+  }
+
+  &__spacer {
+    flex-basis: 10px;
+  }
+
+  &__button {
+    @media (min-width: 720px) {
+      flex-shrink: 0;
+    }
+
+    button {
+      border: none;
+      height: 30px;
+      background-color: $blue;
+      color: $white;
+      transition: all 0.2s ease;
+      font-family: 'Roboto', sans-serif;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $dark-blue;
+      }
+    }
+  }
+}
+
+.ReactCollapse--collapse {
+  transition: height 0.2s ease;
+}

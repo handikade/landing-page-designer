@@ -1,0 +1,21 @@
+@import '../../styles/_colors.scss';
+
+.hero-button {
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 20px 30px;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    color: #007bc1;
+    background: #ffffff;
+  }
+}

@@ -1,0 +1,50 @@
+@import '../../styles/_colors.scss';
+
+.hero {
+  position: relative;
+  color: $white;
+  padding: 150px 30px 100px 30px;
+  background: linear-gradient(rgba(1, 38, 119, 0.6), rgba(1, 48, 139, 0.6)),
+    url('work-desk__dustin-lee.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  @media (min-width: 960px) {
+    padding: 198px 0;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    z-index: 2;
+
+    img {
+      width: 50px;
+      height: auto;
+    }
+  }
+
+  &__heading1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+
+  &__heading2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  &__content {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+
+    @media (min-width: 960px) {
+      margin-bottom: 40px;
+    }
+  }
+}
