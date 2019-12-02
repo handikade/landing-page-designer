@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { CSSTransition } from 'react-transition-group'
 import Cookie from 'js-cookie'
 import NewsLetterContent from './NewsletterContent'
 
@@ -56,7 +57,12 @@ function Newsletter() {
     }
   })
 
-  return isShow ? <NewsLetterContent closeNewsletter={closeNewsletter} /> : null
+  // return isShow ? <NewsLetterContent closeNewsletter={closeNewsletter} /> : null
+  return (
+    <CSSTransition in={isShow} timeout={300} classNames="slide" unmountOnExit>
+      <NewsLetterContent closeNewsletter={closeNewsletter} />
+    </CSSTransition>
+  )
 }
 
 export default Newsletter
