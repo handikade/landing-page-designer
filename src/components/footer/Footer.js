@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <div className="footer">
-      &copy;{year} Budi Setiawan. All rights reserved.
+      &copy;{year} Dika Handika. All rights reserved.
     </div>
   )
 }

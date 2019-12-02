@@ -1,7 +1,9 @@
+@import '../../styles/_colors.scss';
+
 .footer {
   padding: 40px 0;
   background-color: #050328;
-  color: #7e95e0;
+  color: $blue;
   font-size: 12px;
   text-align: center;
 }
