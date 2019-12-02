@@ -68,7 +68,7 @@ function Highlight() {
             relief. User-centered program areas scale.
           </p>
         </div>
-        <div className="highlight__grid">{highlightBoxes}</div>
+        <ul className="highlight__grid">{highlightBoxes}</ul>
       </div>
     </div>
   )

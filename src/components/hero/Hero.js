@@ -9,7 +9,7 @@ function Hero() {
       <div className="hero__logo">
         <img src={logo} alt="Logo" />
       </div>
-      <h1 className="hero__heading1">Hello! I&apos;m Budi Setiawan</h1>
+      <h1 className="hero__heading1">Hello! I&apos;m Dika Handika</h1>
       <h2 className="hero__heading2">Consult, Design, and Develop Websites</h2>
       <p className="hero__content">
         Have something great in mind? Feel free to contact me.
